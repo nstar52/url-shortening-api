@@ -21,6 +21,11 @@ npm run build
 npm start
 ```
 
+**Tests:**
+```bash
+npm test
+```
+
 Server runs on port 3000. Copy `.env.example` to `.env` if you want to change `PORT` or `BASE_URL`.
 
 ## Endpoints
@@ -65,6 +70,5 @@ Things I'd add or change for production:
 - **Redis** – Cache hot short codes in front of the DB to speed up redirects
 - **Click tracking** – Store or increment a counter on each redirect
 - **URL expiry** – Add `expires_at` and return 410 when a link has expired
-- **Tests** – Integration tests for the API
 - **Rate limiting** – Throttle requests to reduce abuse
 - **Logging** – Structured logs for debugging and monitoring
